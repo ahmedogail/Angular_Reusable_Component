@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <h1>Reusable Component cartd</h1>
+  </div>
+  <div class="row">
+    <div class="col-6" >
+      @for(selectedUser of Users; track selectedUser.id)
+      {
+        <div class="mb-4">
+          <app-card [user]="selectedUser" (profileClick)="viewProfile($event)"> </app-card>
+        </div>
+      }
+    </div>
+  </div>
+
+</div>
